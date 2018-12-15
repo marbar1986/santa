@@ -314,6 +314,8 @@ shuffle(child_level2_array);
 
 var slider_level_3 = ["hoho jestem w szoku, że udało ci się dotrzeć, aż tutaj","Może cię trochę niedoceniłem...","Ale jakie to ma znaczenie skoro tutaj i tak polegniesz ;)","W finałowej rundzie swoje żadania przedstawi szesnaściorgo dzieci", "Hehe i co załamany ?","Jeśli ci się uda oddam ci moją pracę", "Nie żartuję zostaniesz świętym mikołajem !", "Zaczynajmy","" ];
 
+// var slider_level_3  = [''];
+
 var child_level3_array = [];
 
 child_level3_array.push("child13.printOne()");
@@ -450,6 +452,7 @@ if(body.hasClass("level1") === true){
              eval(gift_print_level1[1]);
              eval(gift_print_level1[2]);
              eval(gift_print_level1[3]);
+             $(".child_gift_choice").css("margin-left","12%");
              eval(child_level1_array[0]);
              var count = 0;
              $(".snow_efects").append(correct);
@@ -641,6 +644,7 @@ function level_2(){
              eval(gift_print_level2[6]);
              eval(gift_print_level2[7]);
              eval(child_level2_array[0]);
+             $(".child_gift_choice").css("margin-left","3.8%");
              var count = 0;
              $(".snow_efects").append(correct);
              $(".child_gift_choice").on("click",function(){
@@ -890,6 +894,7 @@ function level_3(){
              eval(gift_print_level3[14]);
              eval(gift_print_level3[15]);
              eval(child_level3_array[0]);
+             $(".child_gift_choice").css("margin-left","3.8%");
              var count = 0;
              $(".snow_efects").append(correct);
              $(".child_gift_choice").on("click",function(){
