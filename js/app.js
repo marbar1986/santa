@@ -1,9 +1,28 @@
 $(function() {
-
+console.log($("audio"));
 vph = $(window).height();
 vpw = $(window).width();
 $('.start__page').css("height",vph + "px");
 $('body').css("height",vph + "px");
+
+// MUSIC BUTTON
+
+music_count = 0;
+$(".music_settings").on("click",function(){
+  if(music_count == 0){
+    $(this).css("border","2px solid white");
+    $(".off").css("display","none");
+    $("audio")[0].play();
+  music_count++
+}
+else{
+  $(this).css("border","2px solid red");
+  $(".off").css("display","block");
+$("audio")[0].pause();
+  music_count--
+}
+  })
+
 
 // GAME SUCCESS
 
