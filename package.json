@@ -18,13 +18,16 @@
   "homepage": "https://github.com/marbar1986/santa#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "jquery": "^3.5.0",
-    "lodash": "^4.17.19",
-    "lodash.mergewith": "^4.6.2"
+    "lodash": "^4.17.21",
+    "lodash.mergewith": "^4.6.2",
+    "minimist": "^1.2.3",
+    "trim-newlines": "^3.0.1"
   },
   "dependencies": {
+    "glob-parent": "^5.1.2",
     "yargs-parser": "^13.1.2"
   }
 }
